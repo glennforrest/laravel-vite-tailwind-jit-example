@@ -10,6 +10,7 @@ export default ({ command }) => ({
             input: 'resources/js/app.js',
         },
     },
+    resolve: { alias: { 'vue': 'vue/dist/vue.esm-bundler.js' } },
     plugins: [
         vue(),
         {

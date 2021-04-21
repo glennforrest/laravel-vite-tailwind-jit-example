@@ -47,7 +47,11 @@
 
                 <h1 class="text-center text-white">What</h1>
 
-                <div id="app"></div>
+                <div id="app">
+                    <p>Some inner elements rendering</p>
+
+                    <example-component></example-component>
+                </div>
             </div>
         </div>
 

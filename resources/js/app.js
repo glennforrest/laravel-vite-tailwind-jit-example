@@ -4,8 +4,10 @@ import '../css/app.css';
 
 import './bootstrap';
 
-import App from './components/App.vue'
+import { createApp, defineAsyncComponent } from 'vue';
 
-import { createApp } from 'vue';
+const app = createApp({});
 
-createApp(App).mount('#app');
+app.component('example-component', defineAsyncComponent(() => import('./components/ExampleComponent.vue')));
+
+app.mount('#app');
